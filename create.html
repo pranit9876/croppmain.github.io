@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Crop List</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+    <body>
+            <!--title of crop-->
+            <div class="blue flex items-center justify-center bg-gray-800">
+                <h1 class="cont sm:text-4xl py-2 font-medium title-font text-yellow-500 ">Crop List</h1>
+            </div>
+
+
+
+
+    <div class="min-h-screen bg-gray-800 flex items-center justify-center">
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6">
+
+            <!--card 1-->
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto" data-name="p-1">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(/img/Wheat-Grains..jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='wheat' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/Wheat.html">Wheat</a>
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 1 END-->
+
+            <!--card 2-->
+              <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://st2.depositphotos.com/4761309/7289/i/950/depositphotos_72895957-stock-photo-close-up-of-jowar-sorghum.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='jowar' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        <a href="/componnn/jower2.html">Jowar</a>
+                        </h3>
+                    </button>
+            </div>
+            <!--Card 2 END-->
+
+            <!--card 3-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/bajra-pearl-millet-glass-bowl-205225996.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='bajra' %}'">
+                       
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                         <a href="/componnn/bajra.html">Bajra</a></h3>
+
+                    </button>
+            </div>
+            <!--Card 3 END-->
+
+            <!--card 4-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/soyabean-legume-often-used-like-vegetable-38458289.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='soyabean' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                        <a href="/componnn/Soyabean.html">Soyabean</a>
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 4 END-->
+
+            <!--card 5-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/cotton-farm-16452319.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='cotton' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/cotton.html">Cotton</a>
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 5 END-->
+
+            <!--card 6-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/coconut-26051467.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='groundnut' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/groundnut.html">Groundnut</a>
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 6 END-->
+
+            <!--card 7-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/fresh-sugarcane-garden-farm-55168176.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='sugarcane' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/sugarcane.html">Sugarcane</a>
+                            </h3>
+
+                    </button>
+            </div>
+            <!--Card 7 END-->
+
+            <!--card 8-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/fresh-rice-paddy-field-sunrise-fresh-rice-paddy-field-130755146.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='paddy' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/paddy.html">Paddy</a>
+                            </h3>
+
+                    </button>
+            </div>
+            <!--Card 8 END-->
+
+            <!--card 9-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/barley-15225998.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='barley' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/barley.html">Barley</a>
+                            </h3>
+
+                    </button>
+            </div>
+            <!--Card 9 END-->
+
+            <!--card 10-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/macro-close-up-organic-arhar-dal-cajanus-cajan-cleaned-jute-mat-wooden-macro-close-up-organic-arhar-dal-cajanus-cajan-216850690.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='arhar' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/arhar.html">Arhar</a>
+                            </h3>
+
+                    </button>
+            </div>
+            <!--Card 10 END-->
+
+            <!--card 11-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/ragi-grains-finger-milletgrains-caracan-millet-koracan-white-background-78108389.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='ragi' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/ragi.html">Ragi</a>
+                           </h3>
+
+                    </button>
+            </div>
+            <!--Card 11 END-->
+
+            <!--card 12-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/ear-maize-corn-dark-wooden-background-ear-maize-corn-dark-wooden-background-167877540.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='maize' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/maize.html">Maize</a>
+                           </h3>
+
+                    </button>
+            </div>
+            <!--Card 12 END-->
+
+            <!--card 13-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/moong-daal-lentils-13230783.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='moong' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/moong.html">Moong</a>    
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 13 END-->
+
+            <!--card 14-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/macro-close-up-organic-masoor-dal-lens-culinaris-whole-pink-white-ceramic-soup-spoon-top-view-214357193.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='masoor' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/masoor.html">Masoor</a>    
+                          </h3>
+
+                    </button>
+            </div>
+            <!--Card 14 END-->
+
+            <!--card 15-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/salted-peanuts-groundnut-shelled-turquoise-background-117047550.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='groundnut' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/groundnut.html">Groundnut</a>    
+                            </h3>
+
+                    </button>
+            </div>
+            <!--Card 15 END-->
+
+            <!--card 16-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/ingradient-spice-mustard-seed-yellow-65191365.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='bajra' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/mustardseed.html">Mustard Seed</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 16 END-->
+
+            <!--card 17-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/white-sesame-seeds-scattered-gray-wooden-surface-tabletop-scattered-white-sesame-seeds-159907837.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='seasamum' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/seasmum.html">SEASAMUM</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 17 END-->
+
+            <!--card 18-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/split-black-lentil-also-know-as-black-gram-black-urad-dal-vigna-mungo-urad-bean-split-black-lentil-also-know-as-black-gram-black-177576770.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='urad' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/gramurad.html">Gram Urad</a>    
+            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 18 END-->
+
+            <!--card 19-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/brown-triangular-copra-cut-color-raw-dried-192888772.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='copra' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/copra.html">Copra</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 19 END-->
+
+            <!--card 20-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://lh3.googleusercontent.com/proxy/jjP2ofoTv7codBcA-CEY00OD6F78O1pOKGdw4J-TIsULL-JBSOcNDFSFSqTuW3-R-SCM1TL_H5Yi_O4vdXc6JUAXixZgx5C7THhHyFw)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800" onclick="window.location.href='{% url 'price' name='niger' %}'">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/nigerseeds.html">Niger Seed</a>    
+                            
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 20 END-->
+
+            <!--card 21-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://www.tradekeyindia.com/Pimages/59935Lin%20Seeds.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/kardiseed.html">Kardi Seed</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 21 END-->
+
+            <!--card 22-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/safflower-24057013.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/safflower.html">safflower</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 22 END-->
+
+            <!--card 23-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/sunflower-seeds-roasted-salted-shelled-glass-bowl-surrounded-unshelled-black-white-blurred-42827063.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/sunflower.html">Sunflower</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 23 END-->
+
+            <!--card 24-->
+             <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                    <div class="w-full h-40 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style="background-image: url(https://thumbs.dreamstime.com/z/close-up-bright-yellow-rape-seed-canola-colza-flowers-growing-agricultural-field-close-up-rape-seed-flowers-154790261.jpg)"></div>
+
+                    <button class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-40 dark:bg-gray-800">
+                        <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
+                            <a href="/componnn/rapeseed.html">Rapes eed</a>    
+                            
+                        </h3>
+
+                    </button>
+            </div>
+            <!--Card 24 END-->
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+    </body>
+    <script src="app.js"></script>
+</html>
